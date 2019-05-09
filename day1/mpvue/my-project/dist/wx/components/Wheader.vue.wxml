@@ -1,0 +1,8 @@
+<template name="33996f1a">
+  <view class="_header data-v-2ac2178f">
+    <view bindtap="handleProxy" wx:if="{{status}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_div data-v-2ac2178f">></view>
+    <view wx:else class="_div data-v-2ac2178f"></view>
+    <view class="_div data-v-2ac2178f">腾讯新闻</view>
+    <view class="_div data-v-2ac2178f">_</view>
+  </view>
+</template>

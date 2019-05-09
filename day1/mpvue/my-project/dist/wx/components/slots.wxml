@@ -1,0 +1,2 @@
+<import src="/components/Wfooter.vue.wxml" />
+<import src="/components/card.vue.wxml" />

@@ -1,0 +1,17 @@
+
+.card {
+  padding: 20rpx;
+}
+._header.data-v-2ac2178f {
+  display: flex;
+  padding-top: 60rpx;
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  color: white;
+  background-color: #58bc58;
+  line-height: 100rpx;
+}
+._header ._div.data-v-2ac2178f {
+  flex: 1;
+}

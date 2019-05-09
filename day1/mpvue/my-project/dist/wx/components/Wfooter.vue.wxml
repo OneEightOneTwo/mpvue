@@ -1,0 +1,10 @@
+<template name="75fe36fe">
+  <view class="_footer data-v-098fb39d">
+    <view class="_div data-v-098fb39d">
+      <navigator url="/pages/index/main" hover-class="navigator-hover" class="_navigator data-v-098fb39d"> 首页 </navigator>
+    </view>
+    <view class="_div data-v-098fb39d">
+      <navigator url="/pages/mine/main" hover-class="navigator-hover" class="_navigator data-v-098fb39d"> 我的 </navigator>
+    </view>
+  </view>
+</template>
