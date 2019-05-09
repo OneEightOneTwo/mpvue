@@ -1,11 +1,17 @@
-<import src="/components/Wfooter.vue.wxml" /><template name="4230fbaa">
+<import src="/components/card.vue.wxml" />
+<import src="/components/Wfooter.vue.wxml" /><template name="b3939100">
   <view class="_div data-v-5eca2e54">
     <van-search value="{{value}}" placeholder="请输入搜索关键词" class="_van-search data-v-5eca2e54"></van-search>
     <van-transition show="{{show}}" custom-class="block" class="_van-transition data-v-5eca2e54">
       <view class="_div data-v-5eca2e54">123</view>
     </van-transition>
     <i-notice-bar class="_i-notice-bar data-v-5eca2e54"> 2018年世界杯,将于6月14日至7月15日举行 </i-notice-bar>
+    <i-card title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" class="_i-card data-v-5eca2e54">
+      <view slot="content" class="_view data-v-5eca2e54">内容不错</view>
+      <view slot="footer" class="_view data-v-5eca2e54">尾部内容</view>
+    </i-card> <template text="测试卡片" data="{{...$root[$kk+'4'], $root}}" is="67c12d66"></template>
     <view class="_view data-v-5eca2e54">123</view>
-    <van-button bindtap="handleProxy" type="primary" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-button data-v-5eca2e54">按钮</van-button> <template data="{{...$root[$kk+'4'], $root}}" is="75fe36fe"></template>
+    <van-button bindtap="handleProxy" type="primary" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-button data-v-5eca2e54">按钮</van-button>
+    <van-button bindtap="handleProxy" type="primary" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_van-button data-v-5eca2e54">按钮</van-button> <template data="{{...$root[$kk+'7'], $root}}" is="30ee4c68"></template>
   </view>
 </template>

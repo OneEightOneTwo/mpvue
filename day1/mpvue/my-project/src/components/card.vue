@@ -7,8 +7,16 @@
 </template>
 
 <script>
+import bus from '@/bus'
 export default {
-  props: ['text']
+  props: ['text'],
+  created () {
+    // 监听
+    bus.$on('showGallery', (data) => {
+      this.text = data
+      console.log(data)
+    })
+  }
 }
 </script>
 

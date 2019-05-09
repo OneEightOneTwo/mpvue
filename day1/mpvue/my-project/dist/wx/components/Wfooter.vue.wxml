@@ -1,4 +1,4 @@
-<template name="75fe36fe">
+<template name="30ee4c68">
   <view class="_footer data-v-098fb39d">
     <view class="_div data-v-098fb39d">
       <navigator url="/pages/index/main" hover-class="navigator-hover" class="_navigator data-v-098fb39d"> 首页 </navigator>

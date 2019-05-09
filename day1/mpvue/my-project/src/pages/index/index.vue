@@ -1,12 +1,5 @@
 <template>
   <div>
-    <!-- <Wheader /> -->
-    <!-- <camera
-      device-position="back"
-      flash="off"
-      binderror="error"
-      style="width: 100%; height: 300px;"
-    ></camera> -->
     <van-search :value="value" placeholder="请输入搜索关键词" />
     <van-transition :show="show" custom-class="block">
       <div>123</div>
@@ -15,9 +8,17 @@
     <i-notice-bar>
         2018年世界杯,将于6月14日至7月15日举行
     </i-notice-bar>
+    <i-card title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+        <view slot="content">内容不错</view>
+        <view slot="footer">尾部内容</view>
+    </i-card>
+
+    <card text="测试卡片" />
+
 
     <view>123</view>
     <van-button @click="toggle" type="primary">按钮</van-button>
+    <van-button @click="showGallery" type="primary">按钮</van-button>
     <Wfooter />
     
   </div>
@@ -27,6 +28,8 @@
 import card from '@/components/card'
 import Wheader from '@/components/Wheader'
 import Wfooter from '@/components/Wfooter'
+import bus from '@/bus'
+import store from './store'
 
 export default {
   data () {
@@ -62,6 +65,13 @@ export default {
     },
     toggle () {
       this.show = !this.show
+    },
+    showGallery () {
+      console.log(1)
+      // 触发
+      bus.$emit('showGallery', '你好')
+      store.state.showGallery = !store.state.showGallery
+      console.log(store.state.showGallery)
     }
   },
 

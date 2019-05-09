@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/index/main", "pages/logs/main", "pages/counter/main", "pages/mine/main"],
+  "pages": ["pages/index/main", "pages/logs/main", "pages/mine/main"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#58bc58",

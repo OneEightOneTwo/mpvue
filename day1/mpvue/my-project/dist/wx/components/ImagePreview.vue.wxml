@@ -1,0 +1,3 @@
+<template name="426147e3">
+  <van-image-preview value="{{show}}" bindchange="handleProxy" images="{{images}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-image-preview data-v-245ee8b2"></van-image-preview>
+</template>
