@@ -42,3 +42,7 @@ http://mpvue.com/mpvue/
 打开微信开发者工具，并且引入 wx 目录，开发的时候我们写代码是在 vscode 里面，而调试在微信开发者工具里面
 
 <img src="1.png">
+
+|||
+|-|-|
+|浏览器|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vscode|

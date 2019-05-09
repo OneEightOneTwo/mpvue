@@ -5,6 +5,6 @@
     "navigationBarBackgroundColor": "#58bc58",
     "navigationBarTitleText": "腾讯新闻",
     "navigationBarTextStyle": "white",
-    "navigationStyle": "custom"
+    "navigationStyle": "default"
   }
 }

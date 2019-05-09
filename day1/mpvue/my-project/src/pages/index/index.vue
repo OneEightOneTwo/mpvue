@@ -1,14 +1,23 @@
 <template>
   <div>
-    <Wheader />
+    <!-- <Wheader /> -->
     <!-- <camera
       device-position="back"
       flash="off"
       binderror="error"
       style="width: 100%; height: 300px;"
     ></camera> -->
-    <div>123</div>
+    <van-search :value="value" placeholder="请输入搜索关键词" />
+    <van-transition :show="show" custom-class="block">
+      <div>123</div>
+    </van-transition>
+
+    <i-notice-bar>
+        2018年世界杯,将于6月14日至7月15日举行
+    </i-notice-bar>
+
     <view>123</view>
+    <van-button @click="toggle" type="primary">按钮</van-button>
     <Wfooter />
     
   </div>
@@ -22,6 +31,8 @@ import Wfooter from '@/components/Wfooter'
 export default {
   data () {
     return {
+      show: true,
+      value: '',
       motto: 'Hello miniprograme',
       userInfo: {
         nickName: 'mpvue',
@@ -48,6 +59,9 @@ export default {
     clickHandle (ev) {
       console.log('clickHandle:', ev)
       // throw {message: 'custom test'}
+    },
+    toggle () {
+      this.show = !this.show
     }
   },
 

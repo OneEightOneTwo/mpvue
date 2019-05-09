@@ -1,6 +1,6 @@
 <template>
     <div>
-      <Wheader status="1" />
+      <!-- <Wheader status="1" /> -->
       我的  
     </div>
 </template>
