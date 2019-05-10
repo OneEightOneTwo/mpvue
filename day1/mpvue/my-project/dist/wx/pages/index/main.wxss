@@ -60,3 +60,30 @@
 ._footer ._div {
   flex: 1;
 }
+._video.data-v-51cc1c07 {
+  width: 100%;
+}
+.controls.data-v-51cc1c07 {
+  position: relative;
+  top: 50%;
+  height: 100rpx;
+  margin-top: -50rpx;
+  display: flex;
+}
+.play.data-v-51cc1c07,
+.pause.data-v-51cc1c07,
+.time.data-v-51cc1c07 {
+  flex: 1;
+  height: 100%;
+}
+.time.data-v-51cc1c07 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  line-height: 100rpx;
+}
+.img.data-v-51cc1c07 {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 10rpx auto;
+}

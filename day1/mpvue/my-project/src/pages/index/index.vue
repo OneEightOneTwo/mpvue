@@ -1,6 +1,19 @@
 <template>
   <div>
     <van-search :value="value" placeholder="请输入搜索关键词" />
+    <swiper
+      :indicator-dots="indicatorDots"
+      :autoplay="autoplay"
+      :interval="interval"
+      :duration="duration"
+    >
+      <block v-for="(item,index) in imgUrls" :key="index">
+        <swiper-item>
+          <image :src="item" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <CoverView />
     <van-transition :show="show" custom-class="block">
       <div>123</div>
     </van-transition>
@@ -28,8 +41,10 @@
 import card from '@/components/card'
 import Wheader from '@/components/Wheader'
 import Wfooter from '@/components/Wfooter'
+import CoverView from '@/components/CoverView'
 import bus from '@/bus'
 import store from './store'
+import notebook from './notebook.svg'
 
 export default {
   data () {
@@ -40,14 +55,25 @@ export default {
       userInfo: {
         nickName: 'mpvue',
         avatarUrl: 'http://mpvue.com/assets/logo.png'
-      }
+      },
+      notebook,
+      imgUrls: [
+        'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1054598549,1073845993&fm=111&gp=0.jpg',
+        'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2121206715,2955288754&fm=27&gp=0.jpg',
+        'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1454761787,1890833303&fm=27&gp=0.jpg'
+      ],
+      indicatorDots: true,
+      autoplay: true,
+      interval: 5000,
+      duration: 1000
     }
   },
 
   components: {
     card,
     Wheader,
-    Wfooter
+    Wfooter,
+    CoverView
   },
 
   methods: {

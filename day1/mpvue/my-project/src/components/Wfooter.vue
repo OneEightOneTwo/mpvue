@@ -1,23 +1,33 @@
 <template>
   <footer>
-      <div>
+      <div v-for="(tab,index) in tabs" :key="index">
         <navigator
-          url="/pages/index/main"
+          :url="tab.url"
           hover-class="navigator-hover"
-        >
-          首页
-        </navigator>
-      </div>
-      <div>
-        <navigator
-          url="/pages/mine/main"
-          hover-class="navigator-hover"
-        >
-          我的
+        v-text="tab.title" >
         </navigator>
       </div>
   </footer>
 </template>
+<script>
+export default {
+  data () {
+    return {
+      tabs: [{
+        url: '/pages/index/main',
+        title: '首页'
+      }, {
+        url: '/pages/mine/main',
+        title: '我的'
+      }, {
+        url: '/pages/map/main',
+        title: '地图'
+      }]
+    }
+  }
+}
+</script>
+
 <style lang="scss">
 footer {
   display: flex;
