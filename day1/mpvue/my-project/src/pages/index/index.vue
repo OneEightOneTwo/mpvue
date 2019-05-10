@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index">
     <van-search :value="value" placeholder="请输入搜索关键词" />
     <swiper
       :indicator-dots="indicatorDots"
@@ -28,6 +28,7 @@
 
     <card text="测试卡片" />
 
+    <Waudio v-if="show" />
 
     <view>123</view>
     <van-button @click="toggle" type="primary">按钮</van-button>
@@ -42,6 +43,7 @@ import card from '@/components/card'
 import Wheader from '@/components/Wheader'
 import Wfooter from '@/components/Wfooter'
 import CoverView from '@/components/CoverView'
+import Waudio from '@/components/Waudio'
 import bus from '@/bus'
 import store from './store'
 import notebook from './notebook.svg'
@@ -73,7 +75,8 @@ export default {
     card,
     Wheader,
     Wfooter,
-    CoverView
+    CoverView,
+    Waudio
   },
 
   methods: {
@@ -108,6 +111,10 @@ export default {
 </script>
 
 <style scoped>
+.index{
+  margin-bottom: 50px;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;

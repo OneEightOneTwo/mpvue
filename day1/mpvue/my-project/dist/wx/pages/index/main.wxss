@@ -1,5 +1,8 @@
 @import "../../common/vendor.wxss";
 
+.index.data-v-5eca2e54 {
+  margin-bottom: 100rpx;
+}
 .userinfo.data-v-5eca2e54 {
   display: flex;
   flex-direction: column;

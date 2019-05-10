@@ -1,0 +1,5 @@
+<template name="b6ee1596">
+  <view class="_div data-v-3a471d44"><audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop class="_audio data-v-3a471d44"></audio> <button type="primary" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-3a471d44">播放</button> <button type="primary" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-3a471d44">暂停</button> <button type="primary" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-3a471d44">设置当前播放时间为14秒</button> <button type="primary" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_button data-v-3a471d44">回到开头</button>
+    <view class="_p data-v-3a471d44">{{lyc[time]}}</view>
+  </view>
+</template>
