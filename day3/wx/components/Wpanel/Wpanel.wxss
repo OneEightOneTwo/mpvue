@@ -1,0 +1,2 @@
+/* components/Wpanel/Wpanel.wxss */
+@import "/weui/style/weui.wxss";

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fn()">ok</button>
+    <script>
+        // 发布订阅模式
+        // 监听触发模式
+        const bus = {
+            // 队列
+            queue: [],
+            // 监听 往数组队列里面添加事件队列
+            $on(eventName, callback) {
+                this.queue.push({
+                    eventName,
+                    callback
+                })
+            },
+            // 触发  获取事件队列里面的事件，然后执行
+            $emit(eventName, data) {
+                console.log(eventName, data);
+                for (let q in this.queue) {
+                    console.log(this.queue[q].eventName);
+                    // 如果两个事件匹配的话，则把回调函数取出来执行
+                    if (this.queue[q].eventName === eventName) {
+                        (this.queue[q].callback)(data);
+                    }
+                }
+            }
+        }
+
+        // 监听 往数组队列里面添加事件队列 记录回调函数，但是回调函数不触发
+        bus.$on('onReachBottom', (data) => {
+            console.log(data);
+        });
+
+        // 触发 获取事件队列里面的事件，然后执行 
+        bus.$emit('onReachBottom', '下拉刷新1');
+        bus.$emit('onReachBottom', '下拉刷新2');
+        bus.$emit('onReachBottom', '下拉刷新3');
+        bus.$emit('onReachBottom', '下拉刷新4');
+        
+        console.log(bus);
+        // offset limit
+        // 0 10
+        // 10 10
+        // 20 10
+        // 30 10
+    </script>
+</body>
+
+</html>

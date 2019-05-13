@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "Wsearch":"/components/Wsearch/Wsearch"
-  }
+    "Wsearch": "/components/Wsearch/Wsearch",
+    "Wpanel": "/components/Wpanel/Wpanel"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
 }
